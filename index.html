@@ -4,26 +4,21 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="shortcut icon" href="icon-96x96.webp">
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <title>Landing Page Kenzie Academy</title>
 </head>
 <body>
-  
   <!-- CABEÇALHO -->
-  <!-- <header class="topo">
-
-    <div class="large-container"> -->
+  <header id="home">
+    <div class="container" id="header">
       <!-- LOGO -->
-      <!-- <figure>
+      <figure class="header__logo">
         <img src="assets/img/logo.svg" alt="Logo Kenzie Academy">
-        <figcaption>Logo Kenzie Academy</figcaption>  
-      </figure> -->
-
+        <figcaption>Logo Kenzie Academy</figcaption>
+      </figure>
       <!-- MENU DE NAVEGAÇÃO -->
-
       <nav class="header__nav">
         <ul class="nav__list">
           <li><a href="#1" class="nav__link" >Sobre a Kenzie</a></li>
@@ -31,73 +26,53 @@
           <li><a href="#3" class="nav__link" >Contato</a></li>
         </ul>
       </nav>
-
-      < !-- MENU MOBILE 
+      <!-- MENU MOBILE -->
       <div class="header__menu">
         <i class="fa fa-bars" aria-hidden="true"></i>
       </div>
     </div>
-
-  </header> -->
-
+  </header>
   <!-- PÁGINA INICIAL -->
   <main class="inicial">
-
     <!-- ÁREA DE DESTAQUE -->
-    <!-- <section class="secaoDestaque">
-
+    <section class="container secaoDestaque">
       <h2>Lorem ipsum dolor sit Python</h2>
-      <p>100% Online</p> -->
-
+      <p>100% Online</p>
       <!-- FORMULÁRIO -->
-      <!-- <div class="secaoDestaqueFormulario">
-        <input type="email"  placeholder="E-mail" required>
-        <button type="button">Subscribe</button>
+      <div class="secaoDestaqueFormulario">
+        <input class="prop" type="email"  placeholder="E-mail" required>
+        <button class="prop" type="button">Subscribe</button>
       </div>
-
-    </section> -->
-
+    </section>
     <!-- SEÇÃO SOBRE -->
-    <!-- <section class="secaoSobre">
-
-      <article class="flex"> -->
-        
+    <section class="container secaoSobre">
+      <article class="flex">
         <!-- COLUNA ESQUERDA -->
-        <!-- <div class="flex-col">
-
+        <div class="flex-col box1">
           <h2>LOREM IPSUM DOLOR SIT PYTHON</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti incidunt nam quibusdam fugit reprehenderit aperiam temporibus, maiores dolores molestias cupiditate maxime repudiandae sunt voluptatibus commodi tenetur dolorum ipsa sequi.
-          </p>
-
-          <span>Consectetur adipisicing elit 5 Suscipit deleniti incidunt nam quibusdam fugit reprehenderit aperiam.</span>
-
-          <button>Subscribe</button>
-
-        </div> -->
-
+              @@ -68,38 +77,40 @@ <h2>LOREM IPSUM DOLOR SIT PYTHON</h2>
+        </div>
         <!-- COLUNA DIREITA -->
-        <!-- <div class="flex-col">
-
+        <div class="flex-col box1__img">
           <figure>
             <img class="py_img" src="assets/img/python.png" alt="python">
-            <figcaption>python</figcaption>  
-          </figure>      
-
-        </div> -->
-
-        <!-- COLUNA ESQUERDA -->
-        <!-- <div class="flex-col">
-
-            <figure>
-              <img src="assets/img/JavaScript-logo.png" alt="Java Script">
-              <figcaption>Java Script</figcaption>  
-            </figure>      
-  
-          </div> -->
-
-        <!-- COLUNA DIREITA -->
-        <!-- <div class="flex-col">
-
+            <figcaption>python</figcaption>
+          </figure>
+      </article>
+        </div>
+    </section>
+    <section class="secaoSobre2 secaoSobre">
+      <article class="flex">
+          <!-- COLUNA ESQUERDA -->
+          <div class="flex-col box2__img">
+              <figure>
+                <img class="js_img" src="assets/img/JavaScript-logo.png" alt="Java Script">
+                <figcaption>Java Script</figcaption>
+              </figure>
+            </div>
+          <!-- COLUNA DIREITA -->
+          <div class="flex-col box2">
               <h2> LOREM IPSUM DOLOR SIT JAVASCRIPT</h2>
               <ul>
                   <li>The standard Lorem Ipsum passage, used since the 1500s</li>
@@ -106,15 +81,9 @@
                   <li>Section 1.10.33 of "de Finibus Bonorum et Malorum", by Cicero in 45 BC</li>
                   <li>1914 translation by H. Rackham</li>
               </ul>
-
           </div>
-
-
-
       </article>
-
-    </section> -->
-
+    </section>
 
     <!-- SEÇÃO CURSOS -->
     <section class="secaoCursos">
