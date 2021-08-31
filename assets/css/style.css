@@ -1,515 +1,36 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* FONTS */
-
-
-  
+/* VARIÁVEIS */
+:root{
+    --branco:#FFFFFF;
+    --azul-claro:#007aff;
+    --azul-escuro:#00043e;
+    --cinza:#303030;
+    --cinza-claro:#818181;
+    --cinza-calro2:#f6f6f6;
+    --fonte-h2:'Montserrat', sans-serif;
+    --fonte-padrao: 'Lato', sans-serif;
+    /* Menu */
+    --menu-fontSize:13px;
+    /* Seção destaque */
+    --destaque-fontSize: 63px;
+    --destaque-subtitulo-fontSize:21px;
+    --buttonSub-fontSize:14px
+    /* Seção sobre */
+    --titulo-sobre-fontSize: 24px;
+    --texto-sobre-fontSize: 19px;
+    /* Seção curses */
+    --titulo-curses-fontSize: 19px;
+    --texto-curses-fontSize: 15px;
+    /* Seção calendário: */
+    --datas-fontSize: 36px;
+    --titulo-calendario-fontSize: 19px;
+    --texto-calendario-fontSize: 15px;
+    --buttonSignUp-fontSize:32px;
+    /* Seção contato */
+    --informações:font-size:15px;
+}
 /* GERAL */
 
 img{ /*TEMPORARIO APAGAR DEPOIS....*/
@@ -564,8 +85,721 @@ div#header{
     font-size: 2rem;
     color: var(--branco); 
 }
-/* GERAL */
+/* HEADER */
+
+/* INICIAL */
+/* SEÇÃO DESTAQUE */
+    main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    main .secaoDestaque{
+        text-align: center;
+        width: 100%;
+        height: 40vh;
+        color: var(--branco);
+        background-color: var(--azul-escuro);
+        font-size: 35px;   
+        padding: 10px; 
+    }
+    main .secaoDestaque p{
+        padding:20px;
+        font-size: 21px;   
+    }
+
+    main .secaoDestaqueFormulario{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    main .secaoDestaqueFormulario .prop{
+        border: none;
+        margin: 0;
+        padding: 0;
+        padding: 10px;
+        font-size: 1rem;
+    }   
+    main .secaoDestaqueFormulario input{
+        border-right:0;
+        border-radius: 6px 0px 0px 6px;
+    }
+    main .secaoDestaqueFormulario input:focus{
+        background-color: lightgray;
+        color: var(--azul-escuro);
+    }
+
+    main .secaoDestaqueFormulario  button {
+        background-color: var(--azul-claro);
+        color:white;
+        border-radius: 0px 6px 6px 0px;
+    }
+    main .secaoDestaqueFormulario  button:hover {
+        background-color: red;
+        color: var(--branco);
+    }
+/* SEÇÃO DESTAQUE */
+
+/* SEÇÃO SOBRE */
+    main .secaoSobre{
+        padding: 40px;
+    }
+
+    main .secaoSobre .flex{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    main .secaoSobre .flex .box1{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    main .secaoSobre .flex .box1 h2{
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 50px;
+    }
+    main .secaoSobre .flex .box1 p{
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+    main .secaoSobre .flex .box1 span{
+        color: var(--cinza-claro);
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+    main .secaoSobre .flex .box1 button{
+        width: 100%;
+        border: none;
+        margin: 0;
+        padding: 0;
+        padding: 10px;
+        font-size: 1rem;
+        border-radius: 7px;
+        border: 1px solid var(--cinza-claro);
+        color: var(--cinza-claro);
+        background-color: var(--branco);
+        margin-bottom: 30px
+    }
+    main .secaoSobre .flex .box1 button:hover{
+        color: var(--branco);
+        background-color: var(--azul-escuro);
+        
+    }
+    main .secaoSobre .flex .box1__img .py_img{
+        width: 90vw;
+    }
+    /* SOBRE 2 */
+    main .secaoSobre2{
+        background-color: var(--cinza-calro2);
+        width: 100vw;
+        max-width: 100%;
+    }
+    main .secaoSobre2 ul{
+        list-style-type: disc;
+    }
+
+    /* SOBRE 2 */
+/* SEÇÃO SOBRE */
+/* INICIAL */
+
+/* MEDIA QUERIES */
+    @media screen and (min-width: 400px) {}
   
+    @media screen and (min-width: 800px) {
+        .header__nav, .nav__list{
+            display: flex;
+            align-items: center;
+            
+        }
+        .header__menu{ 
+            display: none;
+            
+        }
+        .header__nav .nav__list .nav__link{
+            color: var(--branco);
+            font-weight: bold;
+            font-size: 1.3rem;
+            margin-left: 24px;
+            padding:20px 0;
+        }
+        .header__nav .nav__list .nav__link:hover{
+            text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+        }
+        /* DESTAQUE */
+        main .secaoDestaque{
+            width:100vw;
+            max-width: 100%;
+            margin: 0;
+            background-image: url(../img/background-destaque.webp);
+            height: 75vh;
+            background-size:cover;
+            font-size: var(--destaque-fontSize);
+        }
+        main .secaoDestaque p{
+            padding:20px;
+            font-size:var(--destaque-subtitulo-fontSize) ; 
+        }
+        /* DESTAQUE */
+    
+        /* SOBRE */
+        main .secaoSobre {
+            padding: 0px;
+            width: 100%;
+            max-width: 100%;
+        }
+        main .secaoSobre .flex {
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 95vw;
+            max-width: 1180px;
+            margin: 0 auto;
+        }
+        main .secaoSobre .flex .box1, main .secaoSobre .flex .box1__img {
+            width: 50%;
+    
+        }
+        main .secaoSobre .flex .box1__img .py_img {
+            width: 100%;
+        }
+        /* SOBRE 2 */
+        main .secaoSobre2{
+            height: 40vh;
+            background-color: var(--cinza-calro2);
+        }
+        main .secaoSobre .flex .box2, main .secaoSobre .flex .box2__img {
+            width: 50%;
+    
+        }
+        main .secaoSobre .flex .box2__img .js_img {
+        
+            width: 40%;
+        }
+        main .secaoSobre .flex .box2__img figure {
+            text-align: center;
+        
+        }
+        main .secaoSobre2 article{
+          padding-top: 7vh;
+        }
+        /* SOBRE 2 */
+        /* SOBRE */
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   
 /* BODY */
